@@ -13,7 +13,6 @@ Source0:	ftp://ftp.cogsci.ed.ac.uk/pub/LTXML/%{module}-%{version}.tar.gz
 URL:		http://www.ltg.ed.ac.uk/software/xml/
 BuildRequires:	ltxml-devel
 BuildRequires:	python-devel >= 2.2.1
-BuildRequires:	rpm-pythonprov
 %pyrequires_eq	python
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 

@@ -3,6 +3,7 @@
 %define		module	PyLTXML
 
 Summary:	Python LT XML interface
+Summary(pl):	Interfejs Pythona do LT XML
 Name:		python-%{module}
 Version:	1.3
 Release:	1
@@ -11,8 +12,8 @@ Group:		Libraries/Python
 Source0:	ftp://ftp.cogsci.ed.ac.uk/pub/LTXML/%{module}-%{version}.tar.gz
 # Source0-md5:	a0f0434c399d2f00e18d1da106dc1707
 URL:		http://www.ltg.ed.ac.uk/software/xml
-BuildRequires:	python-devel >= 2.2.1
 BuildRequires:	ltxml-devel
+BuildRequires:	python-devel >= 2.2.1
 BuildRequires:	rpm-pythonprov
 %pyrequires_eq	python
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -20,6 +21,10 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 This package interfaces our high-performance validating C API for XML
 to Python.
+
+%description -l pl
+Ten pakiet jest interfejsem do wysoko wydajnego API kontroluj±cego
+poprawno¶æ XML do Pythona.
 
 %prep
 %setup -q -n %{module}-%{version}

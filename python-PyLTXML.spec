@@ -24,7 +24,7 @@ to Python.
 
 %description -l pl
 Ten pakiet jest interfejsem do wysoko wydajnego API kontroluj±cego
-poprawno¶æ XML do Pythona.
+poprawno¶æ XML-a do Pythona.
 
 %prep
 %setup -q -n %{module}-%{version}

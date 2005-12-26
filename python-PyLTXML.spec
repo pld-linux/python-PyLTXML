@@ -5,13 +5,13 @@ Summary:	Python LT XML interface
 Summary(pl):	Interfejs Pythona do LT XML
 Name:		python-%{module}
 Version:	1.3
-Release:	1
+Release:	2
 License:	GPL
 Group:		Libraries/Python
 Source0:	ftp://ftp.cogsci.ed.ac.uk/pub/LTXML/%{module}-%{version}.tar.gz
 # Source0-md5:	a0f0434c399d2f00e18d1da106dc1707
 URL:		http://www.ltg.ed.ac.uk/software/xml/
-BuildRequires:	ltxml-devel
+BuildRequires:	ltxml-devel >= 1.2.5-3
 BuildRequires:	python-devel >= 2.2.1
 %pyrequires_eq	python
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)

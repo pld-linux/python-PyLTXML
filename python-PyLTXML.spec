@@ -2,7 +2,7 @@
 %define		module	PyLTXML
 
 Summary:	Python LT XML interface
-Summary(pl):	Interfejs Pythona do LT XML
+Summary(pl.UTF-8):   Interfejs Pythona do LT XML
 Name:		python-%{module}
 Version:	1.3
 Release:	2
@@ -20,9 +20,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 This package interfaces our high-performance validating C API for XML
 to Python.
 
-%description -l pl
-Ten pakiet jest interfejsem do wysoko wydajnego API kontroluj±cego
-poprawno¶æ XML-a do Pythona.
+%description -l pl.UTF-8
+Ten pakiet jest interfejsem do wysoko wydajnego API kontrolujÄ…cego
+poprawnoÅ›Ä‡ XML-a do Pythona.
 
 %prep
 %setup -q -n %{module}-%{version}

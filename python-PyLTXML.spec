@@ -2,7 +2,7 @@
 %define		module	PyLTXML
 
 Summary:	Python LT XML interface
-Summary(pl.UTF-8):   Interfejs Pythona do LT XML
+Summary(pl.UTF-8):	Interfejs Pythona do LT XML
 Name:		python-%{module}
 Version:	1.3
 Release:	2

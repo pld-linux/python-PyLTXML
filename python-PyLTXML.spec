@@ -29,14 +29,13 @@ poprawność XML-a do Pythona.
 
 %build
 CFLAGS="%{rpmcflags} -I/usr/include/ltxml12"; export CFLAGS
-python setup.py build
+%py_build
 
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 
-python setup.py install \
-	--root=$RPM_BUILD_ROOT
+%py_install
 
 cp -a example/* $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 

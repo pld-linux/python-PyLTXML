@@ -11,6 +11,7 @@ Group:		Libraries/Python
 Source0:	ftp://ftp.cogsci.ed.ac.uk/pub/LTXML/%{module}-%{version}.tar.gz
 # Source0-md5:	a0f0434c399d2f00e18d1da106dc1707
 URL:		http://www.ltg.ed.ac.uk/software/xml/
+BuildRequires:	rpmbuild(macros) >= 1.710
 BuildRequires:	ltxml-devel >= 1.2.5-3
 BuildRequires:	python-devel >= 2.2.1
 %pyrequires_eq	python
